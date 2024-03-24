@@ -1,0 +1,20 @@
+Spesifikasi script website ini :
+- Tanpa error jika digunakan di PHP versi 5.6
+- Beberapa bagian artikel error jika di PHP versi 7
+- Menggunakan CodeIgniter 3
+- Menggunakan enkripsi yang lebih aman yaitu password_hash sebagai pengganti MD5
+
+Perlu diperhatikan
+- pastikan ganti password default admin sebelum anda upload ke hosting.
+- untuk konfigurasi database standar codeigniter ada di application -> config -> database.php
+- buatlah database di phpmyadmin dan import dari file database sql
+
+Default username dan password
+- username : admin
+- password : admin123
+- halaman admin : localhost/2LOKODINASV1/administrator
+
+Pada versi yang saya upload ini (26-02-2019), ada beberapa bagian yang harus diganti manual yaitu:
+- BAGIAN HEADER / BANNER ATAS TULISAN "PEMERINTAH KABUPATEN KARAWANG - DINAS PENGENDALIAN PENDUDUK DAN KELUARGA BERENCANA"
+untuk menggantinya di application -> views -> dinas-1 -> header.php
+- BAGIAN FOOTER jika kalian mau menghapus "POWERED BY LOKOMEDIA" ada di file  application -> views -> dinas-1 -> footer.php
